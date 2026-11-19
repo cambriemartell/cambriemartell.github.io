@@ -87,6 +87,9 @@ details[open] .toggle::after { transform: rotate(0); }
 /* Role blocks */
 .case-block { padding: var(--sp-4) 0; border-top: 1px solid var(--rule); }
 .case-block:first-child { padding-top: 0; border-top: 0; }
+.about-copy + .case-blocks > .case-block:first-child { padding-top: var(--sp-4); border-top: 1px solid var(--rule); }
+.accordion-content > .about-copy { padding-bottom: var(--sp-3); }
+.accordion-content > .about-copy p { font-size: clamp(15px, 1.15vw, 18px); font-style: italic; line-height: 1.55; }
 .case-block:last-child { padding-bottom: 0; }
 .role-title { color: var(--accent); font-size: clamp(24px, 2.3vw, 36px); font-weight: 700; letter-spacing: -0.03em; line-height: 1.15; }
 .role-meta { margin-top: var(--sp-1); color: var(--slate); font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-size: 11px; font-weight: 700; line-height: 1.6; letter-spacing: 0.035em; text-transform: uppercase; }
