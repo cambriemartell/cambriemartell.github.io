@@ -52,7 +52,7 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outli
 }
 .hero-copy { margin-top: clamp(24px, 2.6vw, 40px); }
 .hero-copy > p { max-width: 960px; }
-.hero-intro { font-size: clamp(18px, 1.55vw, 25px); line-height: 1.5; letter-spacing: 0; }
+.hero-intro { font-size: clamp(18px, 1.55vw, 25px); line-height: 1.45; letter-spacing: -0.03em; }
 .hero-intro + .hero-intro { margin-top: 1em; }
 
 /* Accordion */
@@ -79,22 +79,22 @@ details[open] .toggle::after { transform: rotate(0); }
 .accordion-content { padding: 0 0 clamp(28px, 3.5vw, 56px); }
 .about-copy { padding: 0 0 clamp(16px, 2vw, 28px); }
 .about-copy > * { max-width: 960px; }
-.about-copy p { font-size: clamp(18px, 1.55vw, 25px); line-height: 1.55; letter-spacing: 0; }
+.about-copy p { font-size: clamp(18px, 1.55vw, 25px); line-height: 1.55; letter-spacing: -0.03em; }
 .about-copy p + p { margin-top: 18px; }
 
 /* Role blocks */
 .case-block { padding: clamp(22px, 2.2vw, 34px) 0; border-top: 1px solid var(--rule); }
 .role-title { color: var(--accent); font-size: clamp(24px, 2.3vw, 36px); font-weight: 700; letter-spacing: -0.03em; line-height: 1.15; }
-.role-meta { margin-top: 6px; color: var(--slate); font-size: clamp(15px, 1.1vw, 17px); line-height: 1.4; }
+.role-meta { margin-top: 6px; letter-spacing: -0.02em; color: var(--slate); font-size: clamp(15px, 1.1vw, 17px); line-height: 1.4; }
 .role-meta span + span::before { content: '·'; margin: 0 8px; }
-.role-lede { margin-top: 16px; max-width: 960px; font-size: clamp(18px, 1.5vw, 24px); line-height: 1.5; }
+.role-lede { margin-top: 16px; letter-spacing: -0.03em; max-width: 960px; font-size: clamp(18px, 1.5vw, 24px); line-height: 1.5; }
 .role-list { margin-top: 16px; max-width: 960px; list-style: none; }
-.role-list li { position: relative; padding: 0 0 0 22px; margin-bottom: 10px; font-size: clamp(17px, 1.3vw, 21px); line-height: 1.55; }
+.role-list li { letter-spacing: -0.025em; position: relative; padding: 0 0 0 22px; margin-bottom: 10px; font-size: clamp(17px, 1.3vw, 21px); line-height: 1.55; }
 .role-list li::before { content: ''; position: absolute; left: 2px; top: 0.7em; width: 6px; height: 6px; border-radius: 50%; background: var(--berry); }
 
 /* Contact */
 .contact-lines { display: flex; flex-wrap: wrap; gap: 14px 36px; }
-.contact-link { display: inline-block; border-bottom: 1px solid currentColor; font-size: clamp(17px, 1.4vw, 22px); letter-spacing: 0; overflow-wrap: anywhere; }
+.contact-link { display: inline-block; border-bottom: 1px solid currentColor; font-size: clamp(17px, 1.4vw, 22px); letter-spacing: -0.03em; overflow-wrap: anywhere; }
 .contact-link:hover { color: var(--accent); }
 .inline-arrow { position: relative; display: inline-block; width: 13px; height: 13px; margin-left: 3px; vertical-align: -2px; }
 .inline-arrow::before { content: ''; position: absolute; top: 1px; right: 1px; width: 7px; height: 7px; border-top: 1px solid currentColor; border-right: 1px solid currentColor; }
