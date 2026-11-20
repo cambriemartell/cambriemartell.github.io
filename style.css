@@ -116,25 +116,27 @@ details[open] .toggle::after { transform: rotate(0); }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .toggle::after { transition: none; } }
 
 
-/* ---- Homepage: scattered tags ---- */
-.scatter { padding: var(--sp-4) 0 var(--sp-5); text-align: center; }
-.sc-stage { position: relative; margin: 0 auto; min-height: clamp(300px, 34vw, 520px); display: flex; align-items: center; justify-content: center; gap: clamp(12px, 3vw, 48px); }
-.sc-name { font-family: 'Permanent Marker', 'Caveat Brush', cursive; font-weight: 400; text-transform: uppercase; color: var(--accent); font-size: clamp(52px, 11vw, 170px); line-height: .98; letter-spacing: .01em; }
-.sc-ast { flex: none; width: clamp(34px, 6vw, 90px); aspect-ratio: 1; background: var(--accent); clip-path: polygon(50.0% 0.0%, 56.5% 34.3%, 85.4% 14.6%, 65.7% 43.5%, 100.0% 50.0%, 65.7% 56.5%, 85.4% 85.4%, 56.5% 65.7%, 50.0% 100.0%, 43.5% 65.7%, 14.6% 85.4%, 34.3% 56.5%, 0.0% 50.0%, 34.3% 43.5%, 14.6% 14.6%, 43.5% 34.3%); transition: transform .6s; }
+/* ---- Homepage: scattered tags (from the Figma 1440w frame) ---- */
+.home .site-header { min-height: 90px; }
+.scatter { padding: 0 0 var(--sp-5); text-align: center; }
+.sc-stage { position: relative; margin: -8px auto 0; height: clamp(360px, 36.2vw, 600px); display: flex; align-items: center; justify-content: center; gap: clamp(12px, 3vw, 48px); }
+.sc-name { font-family: 'Covered By Your Grace', cursive; font-weight: 400; text-transform: uppercase; color: var(--accent); font-size: clamp(52px, 11vw, 190px); line-height: .9; letter-spacing: .01em; text-align: center; }
+.sc-ast { flex: none; width: clamp(34px, 6vw, 100px); aspect-ratio: 1; background: var(--accent); clip-path: polygon(50.0% 0.0%, 56.5% 34.3%, 85.4% 14.6%, 65.7% 43.5%, 100.0% 50.0%, 65.7% 56.5%, 85.4% 85.4%, 56.5% 65.7%, 50.0% 100.0%, 43.5% 65.7%, 14.6% 85.4%, 34.3% 56.5%, 0.0% 50.0%, 34.3% 43.5%, 14.6% 14.6%, 43.5% 34.3%); transition: transform .6s; }
 .sc-stage:hover .sc-l { transform: rotate(90deg); }
 .sc-stage:hover .sc-r { transform: rotate(-90deg); }
-.chip { position: absolute; z-index: 2; display: inline-block; padding: 5px 10px 5px 14px; border: 1px solid rgba(23,23,20,.5); background: var(--paper); color: var(--ink); font: 700 10px Arial, 'Helvetica Neue', Helvetica, sans-serif; letter-spacing: .03em; text-transform: uppercase; cursor: grab; touch-action: none; user-select: none; transform: rotate(var(--r, 0deg)); transition: transform .2s, background .2s, color .2s; }
-.chip::before { content: ''; position: absolute; left: -4px; top: -4px; width: 7px; height: 7px; background: var(--slate); }
+.chip { position: absolute; z-index: 2; display: inline-block; padding: 5px 10px 5px 14px; border: 1px solid #5e657b; background: var(--paper); color: var(--accent); font: 700 10px Arial, 'Helvetica Neue', Helvetica, sans-serif; letter-spacing: .035em; text-transform: uppercase; white-space: nowrap; cursor: grab; touch-action: none; user-select: none; transform: rotate(var(--r, 0deg)); transition: transform .2s, background .2s, color .2s; }
+.chip::before { content: ''; position: absolute; left: -4px; top: -4px; width: 7px; height: 7px; background: #5e657b; }
 .chip:hover { transform: rotate(0deg) scale(1.08); background: var(--accent); color: var(--paper); }
 .chip.drag { cursor: grabbing; transition: none; z-index: 3; }
-.sc-bio { margin: var(--sp-5) auto 0; max-width: 880px; font-size: clamp(16px, 1.6vw, 20px); line-height: 1.6; letter-spacing: 0; }
-.sc-bio p + p { margin-top: var(--sp-4); max-width: 720px; margin-left: auto; margin-right: auto; }
+.sc-bio { margin: var(--sp-4) auto 0; max-width: 1175px; font-size: clamp(16px, 1.46vw, 21px); line-height: 1.78; letter-spacing: 0; color: var(--ink); }
+.sc-bio p + p { margin-top: 46px; max-width: 780px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+@media (max-width: 760px) { .chip { font-size: 9px; padding: 4px 8px 4px 11px; } .scatter .c-case { left: auto !important; right: 2%; } .scatter .c-comm { left: auto !important; right: 1%; } .sc-bio p + p { margin-top: var(--sp-3); } }
 
 /* ---- Sub-pages ---- */
 .subpage { padding: var(--sp-4) 0 var(--sp-5); }
 .crumb { display: inline-block; margin-bottom: var(--sp-3); font-size: 11px; font-weight: 700; color: var(--slate); }
 .crumb:hover { color: var(--accent); }
-.page-title { margin-bottom: var(--sp-4); font-family: 'Permanent Marker', 'Caveat Brush', cursive; font-weight: 400; text-transform: uppercase; letter-spacing: .01em; color: var(--accent); font-size: clamp(44px, 8vw, 120px); line-height: 1; }
+.page-title { margin-bottom: var(--sp-4); font-family: 'Covered By Your Grace', cursive; font-weight: 400; text-transform: uppercase; letter-spacing: .01em; color: var(--accent); font-size: clamp(44px, 8vw, 120px); line-height: 1; }
 .note { margin-top: var(--sp-3); padding: var(--sp-3); border: 1px dashed var(--ink); font-size: 11px; font-weight: 700; color: var(--slate); }
 .cs-row { padding: var(--sp-4) 0; border-top: 1px solid var(--rule); }
 .cs-row .role-title { margin: 0; }
@@ -142,4 +144,3 @@ details[open] .toggle::after { transform: rotate(0); }
 .more { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2) var(--sp-3); margin-top: var(--sp-5); padding-top: var(--sp-3); border-top: 1px solid var(--rule); }
 .more .mono { font-size: 10px; color: var(--slate); }
 .more .chip { position: relative; cursor: pointer; touch-action: auto; }
-.wordmark.mono { font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; letter-spacing: .02em; }
