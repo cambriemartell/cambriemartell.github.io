@@ -23,7 +23,7 @@
   <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -32,7 +32,7 @@
     <a class="wordmark mono" href="index.html">Product Manager / Portfolio / 2026</a>
     <nav class="boxed-nav mono" aria-label="Main navigation">
       <a href="experience.html">Experience</a>
-      <a href="case-studies.html">Case studies</a>
+      <a href="case-studies.html" aria-current="page">Case studies</a>
       <a href="community.html">Community</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -41,14 +41,35 @@
   <section class="subpage">
     <a class="crumb mono" href="index.html">← Home</a>
     <h1 class="page-title">Case studies</h1>
-    <p class="note mono" style="margin-top:0">In progress. The first case study is coming.</p>
-    <div class="cs-row"><p class="role-title">Taste and the unglamorous</p><p class="role-meta"><span>Case study 01</span><span>Coming soon</span></p></div>
-    <nav class="more" aria-label="More pages"><span class="mono">More</span><a class="chip" href="experience.html">Experience</a><a class="chip" href="contact.html">Contact</a><a class="chip" href="community.html">Community &amp; Education</a></nav>
+    <details class="cs-acc" id="approval-flow"><summary class="cs-row"><span><span class="role-title">Rethinking engagement for the AI era</span><span class="role-meta"><span>Case study 01</span><span>Lucid Software</span><span>Process Accelerator approval flow</span></span></span><span class="cs-plus" aria-hidden="true"></span></summary><div class="cs-body">
+<h2>Summary</h2>
+<p>Every document that entered Lucid's Process Accelerator was required to go through the approval flow first, which I owned. I made it a priority to make the required step something large enterprise teams would trust and be willing to use. The core of this was reframing engagement to the business: in the age of AI, content is cheap, so I argued that we must measure whether documents are genuinely worth something to the organization instead of raw numbers going up.</p>
+<h2>The problem</h2>
+<p>Before this product, Lucid's customers handled governance completely by hand. They wanted this rigor automated, but the teams working in the space were in legal, compliance, IT, admin and process roles, where governance is a requirement, but is typically treated as a firehose, lower-engagement feature.</p>
+<p>I had no governance background when I started. I got credible in about two months through industry standards and 100+ customer conversations across enterprise governance, approval routing and compliance.</p>
+<h2>The tradeoff: reframing engagement in the age of AI</h2>
+<p>Part of Lucid's broader strategy involved building an AI agent that made generating content extremely cheap. But customers were not paying us to generate content, because that tool was a dime a dozen. Through customer conversation, I identified that what they paid for was documents that were consistently worth something to their organizations as sources of truth.</p>
+<p>That changed what engagement should mean. In a growth-driven environment, engagement meant raw numbers going up, and requiring approvers and rigor standards inherently pushed those numbers down. I made the case that in the age of AI, content is cheap, so a tool should be evaluated on product-market fit instead.</p>
+<p>To make that practical, I used a litmus test: what does "good" look like, even if we shouldn't track it as a number that only goes up? That meant asking:</p>
+<ul>
+<li>In a firehose of content, will we have only the information we need?</li>
+<li>Do we track how easy it is for customers to get governance in place?</li>
+<li>Can we evaluate metrics like cycle times and cross-org collaboration?</li>
+</ul>
+<p>Before building, I made the case that more contributors across an organization make us more valuable to that organization. With more humans in the loop, Lucid will be more crucial in the AI era, and a document that people across the org have reviewed is worth more.</p>
+<p>I made this case to leadership, and it changed opinions across the team.</p>
+<p>The litmus-test metrics were adopted into a flywheel of success metrics for the product, so we could evaluate whether Process Accelerator was succeeding or failing.</p>
+<p>Compliance can't be growth hacked, and it was what these customers were buying. I designed approvals with these learnings in mind.</p>
+<h2>Details that earned trust</h2>
+<p>Enterprise buyers had to believe approvals were enforced, so I researched how to signal compliance visually. I prototyped the options and owned the research, the decision and the requirements, and engineering built the production version. My governance standards resolved objections raised in the sales process.</p>
+<h2>What shipped and what changed</h2>
+<p>Process Accelerator went 0&rarr;1, and reached <strong>$1.3M in incremental ARR across 137 customers</strong>, all in the Fortune 500. I owned the approval flow, the gate every document passes through on its way in. 80% of our user base utilized the approval flow each month. At that scale, we now understood that the buyers are paying for governance and trust.</p>
+<p>I shipped a slew of net-new governance features that hadn't existed at Lucid before: multi-step and custom approvals, role-based routing, change summaries, version history with restore, and robust, exportable audit logging.</p>
+<p>Beta feedback from enterprise customers changed the roadmap and sprints: custom approval flows became significantly easier to set up, which also helped rapidly unblock Sales efforts.</p>
+<p>The result is that Lucid's tool became a trusted source of enterprise-level process governance, and the team received nearly 4x the headcount due to strong PMF in the AI transformation space.</p>
+</div></details>
   </section>
 
-  <footer class="site-footer mono">
-    <span>© 2026</span>
-  </footer>
 </main>
 </body>
 </html>
